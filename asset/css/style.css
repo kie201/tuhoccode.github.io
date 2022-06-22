@@ -1,0 +1,495 @@
+/* reset css */
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+
+/* font chữ cho cả website */
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* common */
+.clear {
+    clear: both;
+}
+.text-white {
+    color:#fff !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+
+.col-full {
+    width: 100%;
+}
+.col-half {
+    width: 50%;
+}
+.col-third {
+    width: calc(100% / 3);
+    
+}
+.text-centent {
+    text-align: center !important;
+}
+
+.mt-8 {
+    margin-top: 8px;
+}
+
+.mt-16 {
+    margin-top: 16px;
+}
+/* main */
+#main{
+
+}
+
+#header{
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    position:fixed;
+    background-color: #000;
+    z-index: 2;
+   
+}
+
+#nav {
+    display: inline-block;
+}
+/* css của Home Band tour contact */
+#nav li {
+    display: inline-block;
+    position: relative;
+}
+
+/* css kiểu cho menu cấp cha */
+#nav li a {
+    
+    color: #fff;
+    text-decoration:none;
+    font-size: 15px;
+    line-height: 46px;
+    padding: 0 24px;
+    display: inline-block;
+    
+
+}
+#nav> li > a {
+    text-transform: uppercase;
+}
+
+/* đây là css của menu cấp 2 */
+#nav .subnav {
+    display: none;
+    background-color: #fff;
+    text-decoration: none;
+    position:absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+    
+}
+
+#nav .subnav a {
+    display: block;
+    min-width: 160px;
+    color:#000;
+    padding: 0 16px;
+    
+
+}
+#nav .subnav li:hover {
+    color: #000;
+    background-color: #ccc;
+}
+/* hover cho thanh menu cha */
+#nav >li:hover> a {
+    color: #000;
+    background-color: #ccc;
+    
+}
+#nav li:hover .subnav {
+    display: block;
+}
+/* css cho icon down */
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .mobile-menu-btn {
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn {
+    float: right;
+   
+}
+#header .mobile-menu-btn,
+#header .search-icon {
+    color:#fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+}
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor:pointer;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+#header .mobile-menu-btn:hover .menu-icon{
+    color: #000;
+}
+/* ---------------------------------------- */
+/* css của phần slider */
+#slider{
+    position: relative;
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('../img/chicago.jpg') top center / cover no-repeat;
+}
+
+#slider .text-content {
+    /* left: 50%;
+    transform: translateX(-50%); */
+    bottom: 0;
+    width: 100%;
+    padding: 48px;
+    color: #fff;
+    position:absolute;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+    text-shadow: 0 0 1px #000;
+}
+
+
+/* ---------------------------------------- */
+/* css của content */
+#content{
+  
+}
+
+#content .content-section {
+    width: 800px;
+    max-width: 100%;
+    padding: 64px 0 112px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#content .section-heading {
+    font-size: 30px;
+    font-weight: 200;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    
+}
+#content .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6;
+}
+#content .about-text {
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+#content .member-list {
+    padding-top: 48px;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+#content .member-img {
+    margin-top: 15px;
+    width: 153.59px;
+    border-radius: 4px;
+}
+/* ------------------------------------------- */
+/* css cho tour */
+.tour-section {
+    background-color: #000;
+
+}
+
+.ticket {
+    margin-top: 40px;
+    background-color: #fff;
+    list-style-type: none;
+}
+
+.ticket li {
+    color: #757575;
+    font-size: 15px; 
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+}
+.ticket .sold-out {
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.ticket .quatity {
+    float: right;
+    width: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    margin-top: -3px;
+}
+
+
+/* place */
+
+.place-list{
+    margin-top: 16px;
+    
+}
+
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-content{
+    background-color: #fff;
+    font-size: 15px;
+    padding: 16px  ;
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 500px;
+}
+.place-time{
+    padding-top: 15px;
+    opacity: 0.6;
+}
+.place-desc{
+    padding-top: 15px;
+    line-height: 1.4;
+    padding-bottom: 15px;
+}
+.place-buy-btn{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding:11px 16px;
+    display: inline-block;
+    border: none;
+}
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+/* chuc nang mua ve */
+.modal{
+    position:fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    align-items: center;
+    justify-content:center;
+}
+.modal-container {
+    background: #fff;
+    width: 900px;
+    min-height: 300px;
+    position:relative;
+    max-width: calc(100% - 32px);   
+    animation: modalFadeIn ease 1s;
+}
+.modal-close {
+    position: absolute;
+    right: 0;
+    padding: 16px;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.8;
+}
+.modal-close:hover{
+    background-color: #ccc;
+    color:#000;
+    opacity: 1;
+}
+
+header.modal-header {
+    height: 129px;
+    background-color: #009688;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+header i {
+    margin-right: 16px;
+}
+
+.modal-boby {
+    padding: 16px;
+}
+.modal-label{
+    display: block;
+    margin-bottom: 16px;
+}
+.modal-input {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 24px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 15px;
+    padding: 11px;
+}
+
+#buy-tickets {
+    width: 100%;
+    background: #009688;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    height: 54px;
+    cursor: pointer
+}
+#buy-tickets:hover{
+    opacity: 0.8;
+}
+
+.modal-footer  {
+    padding: 16px;
+    text-align: right;
+    margin-bottom: 16px;
+}
+.modal-footer a{
+    color: #2196f3;
+}
+.modal.open {
+    display: flex;
+}
+@keyframes modalFadeIn {
+    from {
+        transform: translateY(-556px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.contact-content {
+    padding-top: 48px;
+}
+.contact-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+.contact-info p i {
+    display: inline-block;
+    width: 30px;
+}
+.contact-form {
+    font-size: 15px;
+        
+}
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.form-submit {
+    padding: 9px 15px;
+    color: #fff;
+    background: #000;
+    border: none;
+    float: right;
+    font-size: 15px;
+    cursor: pointer;
+}
+.form-submit:hover {
+    background-color: #ccc;
+    color:#000;
+}
+
+.map-section img {
+    width: 100%;
+     
+}
+
+/* ------------------------------------------- */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+    font-size: 15px;
+    color: #000
+}
+
+#footer .social {
+    font-size: 18px;
+}
+
+#footer .social a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .social a:hover {
+    opacity: 0.6;
+}
+
+ #footer .copyright {
+     margin: 15px 0 ;
+     color: rgba(0, 0, 0, 0.6)
+ }
+ #footer .copyright > a {
+     color: rgba(0, 0, 0, 0.6)
+ }
+
